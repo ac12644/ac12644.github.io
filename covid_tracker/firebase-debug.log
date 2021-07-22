@@ -1,0 +1,57 @@
+[debug] [2020-08-03T12:47:05.421Z] ----------------------------------------------------------------------
+[debug] [2020-08-03T12:47:05.424Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting:covid19tracker-ac12644
+[debug] [2020-08-03T12:47:05.424Z] CLI Version:   8.6.0
+[debug] [2020-08-03T12:47:05.424Z] Platform:      darwin
+[debug] [2020-08-03T12:47:05.424Z] Node Version:  v13.8.0
+[debug] [2020-08-03T12:47:05.426Z] Time:          Mon Aug 03 2020 18:17:05 GMT+0530 (India Standard Time)
+[debug] [2020-08-03T12:47:05.426Z] ----------------------------------------------------------------------
+[debug] [2020-08-03T12:47:05.426Z] 
+[debug] [2020-08-03T12:47:05.436Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-03T12:47:05.437Z] > authorizing via signed-in user
+[debug] [2020-08-03T12:47:05.437Z] [iam] checking project covid19-tracker-c2967 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-08-03T12:47:05.441Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/covid19-tracker-c2967:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-08-03T12:48:20.572Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. connect ETIMEDOUT 216.58.200.138:443
+[debug] [2020-08-03T12:48:20.573Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/covid19-tracker-c2967  
+ 
+[debug] [2020-08-03T12:48:21.096Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 03 Aug 2020 12:48:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'covid19-tracker-c2967'...
+[info] 
+[info] i  deploying hosting 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/covid19-tracker-c2967/overview
+[debug] [2020-08-03T12:48:21.323Z] TypeError: Cannot read property 'deploys' of undefined
+    at /usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:84:36
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-08-03T12:49:16.106Z] ----------------------------------------------------------------------
+[debug] [2020-08-03T12:49:16.109Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting:covid19tracker-ac12644
+[debug] [2020-08-03T12:49:16.109Z] CLI Version:   8.6.0
+[debug] [2020-08-03T12:49:16.109Z] Platform:      darwin
+[debug] [2020-08-03T12:49:16.110Z] Node Version:  v13.8.0
+[debug] [2020-08-03T12:49:16.111Z] Time:          Mon Aug 03 2020 18:19:16 GMT+0530 (India Standard Time)
+[debug] [2020-08-03T12:49:16.111Z] ----------------------------------------------------------------------
+[debug] [2020-08-03T12:49:16.111Z] 
+[debug] [2020-08-03T12:49:16.123Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-03T12:49:16.124Z] > authorizing via signed-in user
+[debug] [2020-08-03T12:49:16.124Z] [iam] checking project covid19-tracker-c2967 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-08-03T12:49:16.127Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/covid19-tracker-c2967:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-08-03T12:50:31.267Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. connect ETIMEDOUT 216.58.200.138:443
+[debug] [2020-08-03T12:50:31.268Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/covid19-tracker-c2967  
+ 
+[debug] [2020-08-03T12:51:01.273Z] Server Error. ETIMEDOUT
+[debug] [2020-08-03T12:51:01.569Z] FirebaseError: Server Error. ETIMEDOUT
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:32:31)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:321:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at Timeout.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:851:16)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+[error] 
+[error] Error: Failed to get Firebase project covid19-tracker-c2967. Please make sure the project exists and your account has permission to access it.
